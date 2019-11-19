@@ -1,0 +1,11 @@
+{
+  "name": "henta-installer",
+  "version": "0.1.0",
+  "description": "Утилита для начальной настройки и установки вашего бота",
+  "main": "src/index.js",
+  "author": "Elektro-Volk",
+  "license": "MIT",
+  "dependencies": {
+    "vk-io": "^4.0.0-rc.29"
+  }
+}
