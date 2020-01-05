@@ -6,7 +6,7 @@
   "author": "Elektro-Volk",
   "license": "MIT",
   "dependencies": {
-    "vk-io": "^4.0.0-rc.29"
+    "vk-io": "^4.0.0-rc.30"
   },
   "scripts": {
     "test": "echo 'no tests'"
