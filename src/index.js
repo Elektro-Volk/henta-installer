@@ -58,13 +58,22 @@ export default class HentaInstaller {
     this.rl.close();
   }
 
+  async readFileOrCreate(path) {
+    try {
+      return await fs.readFile(path);
+    } catch (err) {
+      await fs.writeFile(path, '{}');
+      return '{}';
+    }
+  }
+
   async getSettings(_path) {
     const fullPath = path.resolve(`./settings/${_path}`);
     if (this.loadedSettings.get(fullPath)) {
       return this.loadedSettings.get(fullPath);
     }
 
-    const settings = JSON.parse(await fs.readFile(fullPath));
+    const settings = JSON.parse(await this.readFileOrCreate(fullPath));
     this.loadedSettings.set(fullPath, settings);
 
     return settings;
