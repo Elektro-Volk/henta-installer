@@ -1,6 +1,6 @@
 {
   "name": "henta-installer",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Утилита для начальной настройки и установки вашего бота",
   "main": "src/index.js",
   "author": "Elektro-Volk",
